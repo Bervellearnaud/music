@@ -196,3 +196,47 @@ footer {
     font-size: 0.8rem; /* Réduit la taille du texte du footer */
   }
 }
+
+/* Styles spécifiques pour iPhone SE (et écrans très petits) */
+@media (max-width: 375px) {
+  body {
+    padding: 0.5rem; /* Encore moins d'espacement */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Titre encore plus petit */
+    margin-bottom: 0.8rem;
+  }
+
+  #search {
+    font-size: 0.9rem; /* Champ de recherche plus petit */
+    padding: 0.5rem 0.8rem;
+  }
+
+  button {
+    font-size: 1rem; /* Bouton plus petit */
+    padding: 0.5rem 0;
+  }
+
+  #results {
+    gap: 0.5rem; /* Encore moins d'espace entre les résultats */
+  }
+
+  .track {
+    padding: 0.5rem; /* Encore moins d'espace dans chaque résultat */
+  }
+
+  .track p {
+    font-size: 0.9rem; /* Texte des résultats plus petit */
+    margin-bottom: 0.3rem;
+  }
+
+  audio {
+    height: 30px; /* Réduit la hauteur du lecteur audio */
+  }
+
+  footer {
+    font-size: 0.7rem; /* Footer encore plus petit */
+    margin-top: 1.5rem;
+  }
+}
