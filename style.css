@@ -136,3 +136,63 @@ footer {
     font-size: 1.2rem;
   }
 }
+/* Styles pour les écrans de petite taille (mobiles) */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem; /* Réduit l'espacement autour du contenu */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Réduit la taille du titre */
+    margin-bottom: 1rem;
+  }
+
+  #search-container {
+    flex-direction: column; /* Affiche le champ et le bouton verticalement */
+    max-width: 100%; /* Le champ prend toute la largeur */
+    border-radius: 10px; /* Bords moins arrondis */
+  }
+
+  #search {
+    padding: 0.6rem 1rem; /* Réduit le padding du champ */
+    font-size: 1rem;
+    border-radius: 10px 10px 0 0; /* Arrondi seulement en haut */
+  }
+
+  button {
+    width: 100%; /* Le bouton prend toute la largeur */
+    padding: 0.6rem 0; /* Réduit le padding du bouton */
+    font-size: 1.1rem;
+    border-radius: 0 0 10px 10px; /* Arrondi seulement en bas */
+  }
+
+  #results {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(100%, 1fr)
+    ); /* Un seul élément par ligne */
+    gap: 1rem; /* Réduit l'espacement entre les résultats */
+  }
+
+  .track {
+    padding: 0.8rem; /* Réduit le padding des éléments de résultat */
+  }
+
+  .track img {
+    max-width: 100%; /* L'image prend toute la largeur disponible */
+    margin-bottom: 0.5rem; /* Réduit l'espacement sous l'image */
+  }
+
+  .track p {
+    font-size: 1rem; /* Réduit la taille du texte */
+  }
+
+  audio {
+    border-radius: 5px; /* Bords moins arrondis */
+  }
+
+  footer {
+    margin-top: 2rem; /* Réduit la marge au-dessus du footer */
+    font-size: 0.8rem; /* Réduit la taille du texte du footer */
+  }
+}
